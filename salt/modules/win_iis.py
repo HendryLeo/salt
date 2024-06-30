@@ -24,6 +24,11 @@ log = logging.getLogger(__name__)
 _DEFAULT_APP = "/"
 _VALID_PROTOCOLS = ("ftp", "http", "https")
 _VALID_SSL_FLAGS = tuple(range(0, 4))
+# https://learn.microsoft.com/en-us/powershell/module/webadministration/new-webbinding?view=winserver2012-ps
+# 0: Regular certificate in Windows certificate storage.
+# 1: SNI certificate.
+# 2: Central certificate store.
+# 3: SNI certificate in central certificate store.
 
 # Define the module's virtual name
 __virtualname__ = "win_iis"
