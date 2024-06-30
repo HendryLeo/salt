@@ -709,7 +709,7 @@ def modify_binding(
 
     CLI Example:
 
-    The following will seat the host header of binding ``*:80:`` for ``site0``
+    The following will set the host header of binding ``*:80:`` for ``site0``
     to ``example.com``
 
     .. code-block:: bash
